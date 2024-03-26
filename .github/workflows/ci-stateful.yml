@@ -37,7 +37,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout Code
-        uses: actions/checkout@d0651293c4a5a52e711f25b41b05b2212f385d28
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
         with:
           token: ${{ secrets.NPM_TOKEN }}
 
