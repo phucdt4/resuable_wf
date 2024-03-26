@@ -13,6 +13,9 @@ on:
         required: false
         type: string
         default: 'main'
+    secrets:
+      API_KEY:
+        required: true
         
 defaults:
   run:
