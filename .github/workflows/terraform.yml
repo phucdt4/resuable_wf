@@ -16,7 +16,6 @@ on:
     secrets:
       API_KEY:
         required: true
-    variables:
       AWS_REGION:
         required: true
       TERRAFORM_ROLE_TO_ASSUME:
