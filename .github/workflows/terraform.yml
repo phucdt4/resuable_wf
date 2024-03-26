@@ -16,7 +16,8 @@ on:
     secrets:
       API_KEY:
         required: true
-        
+      AWS_REGION:
+        required: true
 defaults:
   run:
     shell: bash
