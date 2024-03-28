@@ -126,7 +126,7 @@ jobs:
           docker manifest inspect --verbose ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.PROJECT_VERSION }}
 
       - name: Scan image with Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@41f05d9ecffa2ed3f1580af306000f734b733e54
+        uses: aquasecurity/trivy-action@d710430a6722f083d3b36b8339ff66b32f22ee55
         with:
           image-ref: ${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.PROJECT_VERSION }}
           format: 'table'
