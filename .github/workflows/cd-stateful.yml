@@ -40,7 +40,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout Code
-        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
+        uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@4f2f92e5ab58e748e0c4c845528ecf8c646d8373
