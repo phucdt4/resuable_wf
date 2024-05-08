@@ -105,7 +105,7 @@ jobs:
 
       - name: Scan ECR image with Trivy vulnerability scanner
         continue-on-error: true
-        uses: aquasecurity/trivy-action@fbd16365eb88e12433951383f5e99bd901fc618f
+        uses: aquasecurity/trivy-action@b2933f565dbc598b29947660e66259e3c7bc8561
         with:
           image-ref: ${{ steps.build-image.outputs.image }}
           format: 'table'
