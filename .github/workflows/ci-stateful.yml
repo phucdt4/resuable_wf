@@ -85,7 +85,7 @@ jobs:
           echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
       - name: Scan ECR image with Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@41f05d9ecffa2ed3f1580af306000f734b733e54
+        uses: aquasecurity/trivy-action@7c2007bcb556501da015201bcba5aa14069b74e2
         with:
           image-ref: ${{ steps.build-image.outputs.image }}
           format: 'table'
